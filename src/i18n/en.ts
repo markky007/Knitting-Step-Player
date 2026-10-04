@@ -1,0 +1,91 @@
+export default {
+  common: {
+    appTitle: 'Knitting Step Player',
+    next: 'Next',
+    prev: 'Previous',
+    back: 'Back',
+    cancel: 'Cancel',
+    confirm: 'Confirm',
+    close: 'Close',
+    delete: 'Delete',
+    edit: 'Edit',
+    save: 'Save',
+    start: 'Start',
+    continue: 'Continue',
+    startOver: 'Start Over',
+    import: 'Import Pattern',
+    loading: 'Loading...',
+    error: 'Error',
+    warning: 'Warning'
+  },
+  library: {
+    title: 'Pattern Library',
+    subtitle: 'Select a pattern to follow step by step',
+    searchPlaceholder: 'Search patterns...',
+    emptyTitle: 'No patterns in library yet',
+    emptySubtitle: 'Import a .json pattern file or load a sample pattern to get started',
+    loadSample: 'Load Sample Pattern',
+    status: {
+      notStarted: 'Not started',
+      inProgress: 'In progress',
+      completed: 'Completed'
+    },
+    deleteConfirmTitle: 'Delete Pattern',
+    deleteConfirmMessage: 'Are you sure you want to delete "{title}"? All saved progress will be lost.'
+  },
+  materials: {
+    title: 'Materials & Tools',
+    yarns: 'Yarns',
+    tools: 'Tools & Needles',
+    notes: 'Pattern Notes',
+    gauge: 'Gauge Information',
+    stitchUnitRatio: 'Stitch Ratio',
+    startPlaying: 'Start Crafting',
+    resumePlaying: 'Continue Crafting'
+  },
+  player: {
+    repeatCounter: 'Repeat',
+    repeatProgress: 'Repeat {current} of {total}',
+    stitchesAfter: 'Stitches After Step',
+    stitchesCount: '{count} stitches',
+    note: 'Note',
+    yarnChange: 'Switch yarn to',
+    partChange: 'Starting new part',
+    jumpToStep: 'Jump to Step',
+    stepListTitle: 'All Steps',
+    completeTitle: 'Pattern Completed!',
+    completeSubtitle: 'You have finished crafting all steps of this pattern.',
+    assemblyTitle: 'Assembly View',
+    assemblySubtitle: 'Showing full assembly of all crafted parts.',
+    resetCamera: 'Reset Camera',
+    toggleAutoFocus: 'Auto-focus active stitches',
+    webglUnavailable: 'WebGL is not available in your browser. You can still follow the written steps.',
+    continuePrompt: 'Continue from {step} or start over from the beginning?'
+  },
+  import: {
+    title: 'Import Pattern (.json)',
+    subtitle: 'Drop or select a JSON pattern file matching schema version 1',
+    dropzoneText: 'Drag & drop your .json file here, or click to browse',
+    browseFiles: 'Browse File',
+    reviewTitle: 'Review Pattern Details',
+    patternTitle: 'Pattern Title',
+    craftType: 'Craft Type',
+    partsCount: 'Parts',
+    totalSteps: 'Total Steps',
+    computedVsExpected: 'Computed Stitches vs Expected Stitches',
+    issuesFound: 'Issues or warnings found ({count})',
+    importSuccess: 'Pattern successfully imported!',
+    confirmImport: 'Save & Start',
+    invalidJsonFormat: 'Invalid JSON file format'
+  },
+  settings: {
+    title: 'Settings',
+    language: 'Language',
+    countRepeats: 'Count Repeat Iterations',
+    countRepeatsDesc: 'Break repeat groups (e.g. (sc, inc) x6) into individual repeat counter steps',
+    animations: '3D Stitch Animations',
+    animationsDesc: 'Animate new stitches sequentially as you advance steps',
+    autoFocus: 'Auto-focus Camera',
+    autoFocusDesc: 'Automatically ease camera towards highlighted stitches on step change'
+  }
+}

@@ -1,0 +1,244 @@
+// Design Tokens derived directly from DESIGN.md (Harvey Identity)
+// Prefix: --kp-* (Knitting Player)
+
+:root {
+  // Colors
+  --kp-color-primary: #0f0e0d;
+  --kp-color-ink: #0f0e0d;
+  --kp-color-ink-soft: #33312c;
+  --kp-color-on-dark: #ffffff;
+  --kp-color-surface: #ffffff;
+  --kp-color-surface-muted: #f2f1f0;
+  --kp-color-surface-warm: #dbd9d1;
+  --kp-color-surface-dark: #1f1d1a;
+  --kp-color-surface-black: #000000;
+  --kp-color-muted: #706d66;
+  --kp-color-muted-light: #8f8b85;
+  --kp-color-muted-lighter: #adaba5;
+  --kp-color-border: #cccac6;
+  --kp-color-border-light: #e5e5e3;
+  --kp-color-accent: #f6f202;
+
+  // Typography Families
+  --kp-font-serif: "Playfair Display", "Newsreader", Georgia, serif;
+  --kp-font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+  // Font Weights (400 and 500 ONLY per DESIGN.md)
+  --kp-font-weight-regular: 400;
+  --kp-font-weight-medium: 500;
+
+  // Radii
+  --kp-radius-sm: 3px;
+  --kp-radius-md: 4px;
+  --kp-radius-lg: 6px;
+  --kp-radius-xl: 8px;
+  --kp-radius-full: 9999px;
+
+  // Spacing Scale
+  --kp-space-xs: 4px;
+  --kp-space-sm: 8px;
+  --kp-space-md: 12px;
+  --kp-space-lg: 16px;
+  --kp-space-xl: 20px;
+  --kp-space-2xl: 24px;
+  --kp-space-3xl: 32px;
+  --kp-space-gutter: 40px;
+  --kp-space-section: 64px;
+  --kp-space-section-lg: 128px;
+
+  // Elevation & Shadows
+  --kp-shadow-card: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  --kp-shadow-none: none;
+}
+
+// Typography Classes matching DESIGN.md scale
+.kp-hero-display {
+  font-family: var(--kp-font-serif);
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: -0.9px;
+}
+
+.kp-display-serif {
+  font-family: var(--kp-font-serif);
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: -0.32px;
+}
+
+.kp-title-serif {
+  font-family: var(--kp-font-serif);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: -0.24px;
+}
+
+.kp-title-lg {
+  font-family: var(--kp-font-sans);
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.32px;
+}
+
+.kp-title-md {
+  font-family: var(--kp-font-sans);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: -0.24px;
+}
+
+.kp-title-sm {
+  font-family: var(--kp-font-sans);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: normal;
+}
+
+.kp-body-lg {
+  font-family: var(--kp-font-sans);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: normal;
+}
+
+.kp-body {
+  font-family: var(--kp-font-sans);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: normal;
+}
+
+.kp-body-tight {
+  font-family: var(--kp-font-sans);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: normal;
+}
+
+.kp-body-strong {
+  font-family: var(--kp-font-sans);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: normal;
+}
+
+.kp-label {
+  font-family: var(--kp-font-sans);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: normal;
+}
+
+.kp-caption {
+  font-family: var(--kp-font-sans);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: normal;
+}
+
+.kp-button-text {
+  font-family: var(--kp-font-sans);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.45;
+  letter-spacing: normal;
+}
+
+// Editorial Component Utilities matching DESIGN.md
+.kp-btn-primary {
+  background-color: var(--kp-color-primary) !important;
+  color: var(--kp-color-on-dark) !important;
+  font-family: var(--kp-font-sans);
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: var(--kp-radius-xl) !important;
+  padding: 12px 20px;
+  text-transform: none;
+  min-height: 48px; // Accessible tap target
+  box-shadow: none !important;
+  transition: opacity 0.15s ease;
+
+  &:hover {
+    opacity: 0.92;
+  }
+}
+
+.kp-btn-secondary {
+  background-color: var(--kp-color-surface) !important;
+  color: var(--kp-color-ink) !important;
+  border: 1px solid var(--kp-color-border) !important;
+  font-family: var(--kp-font-sans);
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: var(--kp-radius-xl) !important;
+  padding: 12px 20px;
+  text-transform: none;
+  min-height: 48px;
+  box-shadow: none !important;
+  transition: background-color 0.15s ease;
+
+  &:hover {
+    background-color: var(--kp-color-surface-muted) !important;
+  }
+}
+
+.kp-card {
+  background-color: var(--kp-color-surface);
+  color: var(--kp-color-ink);
+  border: 1px solid var(--kp-color-border);
+  border-radius: var(--kp-radius-xl);
+  padding: var(--kp-space-3xl);
+  box-shadow: var(--kp-shadow-card);
+}
+
+.kp-card-flat {
+  background-color: var(--kp-color-surface);
+  color: var(--kp-color-ink);
+  border: 1px solid var(--kp-color-border);
+  border-radius: var(--kp-radius-xl);
+  padding: var(--kp-space-2xl);
+  box-shadow: none;
+}
+
+.kp-card-dark {
+  background-color: var(--kp-color-surface-dark);
+  color: var(--kp-color-on-dark);
+  border-radius: var(--kp-radius-xl);
+  padding: var(--kp-space-3xl);
+  box-shadow: none;
+}
+
+.kp-chip {
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--kp-color-surface-muted);
+  color: var(--kp-color-ink-soft);
+  font-family: var(--kp-font-sans);
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: var(--kp-radius-full);
+  padding: 4px 12px;
+}
+
+.kp-accent-badge {
+  background-color: var(--kp-color-accent);
+  color: var(--kp-color-ink);
+  font-family: var(--kp-font-sans);
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: var(--kp-radius-sm);
+  padding: 2px 8px;
+  display: inline-block;
+}

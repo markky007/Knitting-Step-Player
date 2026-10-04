@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "sample-flat",
+  "title": "Sample Flat Swatch",
+  "craft": "crochet",
+  "materials": {
+    "yarns": [
+      { "id": "y1", "name": "Natural Cotton", "colorHex": "#DBD9D1" }
+    ],
+    "tools": ["4.0 mm hook"]
+  },
+  "parts": [
+    {
+      "id": "swatch",
+      "name": "Swatch",
+      "kind": "flat",
+      "start": { "kind": "chain", "count": 10 },
+      "steps": [
+        {
+          "id": "r1",
+          "label": "Row 1",
+          "raw": "10 sc across chain (10)",
+          "yarnId": "y1",
+          "expectedCount": 10,
+          "items": [{ "kind": "op", "code": "sc", "n": 10 }]
+        },
+        {
+          "id": "r2",
+          "label": "Row 2",
+          "raw": "ch 1, turn, 10 sc across (10)",
+          "expectedCount": 10,
+          "items": [{ "kind": "op", "code": "sc", "n": 10 }]
+        },
+        {
+          "id": "r3",
+          "label": "Row 3",
+          "raw": "ch 1, turn, 10 sc across (10)",
+          "expectedCount": 10,
+          "items": [{ "kind": "op", "code": "sc", "n": 10 }]
+        }
+      ]
+    }
+  ]
+}

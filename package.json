@@ -1,0 +1,58 @@
+{
+  "name": "knitting-step-player",
+  "version": "0.1.0",
+  "description": "Knitting & Crochet Step Player - LEGO-style interactive 3D pattern guide",
+  "productName": "Knitting Step Player",
+  "author": "MexZ",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "quasar dev",
+    "build": "quasar build",
+    "typecheck": "vue-tsc --noEmit",
+    "test": "vitest run",
+    "test:unit": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "playwright test",
+    "postinstall": "quasar prepare --silent"
+  },
+  "dependencies": {
+    "@quasar/extras": "^2.1.0",
+    "dexie": "^4.0.11",
+    "pinia": "^4.0.2",
+    "quasar": "^2.34.0",
+    "three": "^0.180.0",
+    "vue": "^3.5.22",
+    "vue-i18n": "^11.3.0",
+    "vue-router": "^5.0.6",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@intlify/unplugin-vue-i18n": "^11.0.0",
+    "@playwright/test": "^1.51.0",
+    "@quasar/app-vite": "^3.10.1",
+    "@types/node": "^22.19.11",
+    "@types/three": "^0.180.0",
+    "@vitejs/plugin-vue": "^6.0.9",
+    "@vue/test-utils": "^2.4.6",
+    "autoprefixer": "^10.4.27",
+    "happy-dom": "^20.14.5",
+    "postcss": "^8.5.8",
+    "sass-embedded": "^1.86.0",
+    "typescript": "^5.8.0",
+    "vitest": "^3.0.9",
+    "vue-tsc": "^3.3.3"
+  },
+  "keywords": [
+    "quasar",
+    "quasar-app",
+    "quasar-cli",
+    "quasar-app-vite",
+    "vite",
+    "vue",
+    "vuejs"
+  ],
+  "engines": {
+    "node": ">= 26 || ^24 || ^22.12"
+  }
+}

@@ -1,0 +1,27 @@
+// Global Application SCSS
+@import './tokens.scss';
+
+body {
+  font-family: var(--kp-font-sans);
+  background-color: var(--kp-color-surface);
+  color: var(--kp-color-ink);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+}
+
+// Respect reduced motion preference (Section 8, Section 11)
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+// Accessible tap targets (Section 11, WCAG 2.2 AA)
+button, [role="button"], a {
+  min-height: 44px;
+}

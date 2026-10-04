@@ -1,0 +1,91 @@
+export default {
+  common: {
+    appTitle: 'Knitting Step Player',
+    next: 'ถัดไป',
+    prev: 'ย้อนกลับ',
+    back: 'กลับ',
+    cancel: 'ยกเลิก',
+    confirm: 'ยืนยัน',
+    close: 'ปิด',
+    delete: 'ลบ',
+    edit: 'แก้ไข',
+    save: 'บันทึก',
+    start: 'เริ่มถัก',
+    continue: 'ถักต่อ',
+    startOver: 'เริ่มใหม่ตั้งแต่ต้น',
+    import: 'นำเข้าแพทเทิร์น',
+    loading: 'กำลังโหลด...',
+    error: 'เกิดข้อผิดพลาด',
+    warning: 'คำเตือน'
+  },
+  library: {
+    title: 'คลังแพทเทิร์น',
+    subtitle: 'เลือกแพทเทิร์นเพื่อเริ่มถักแบบทีละขั้นตอน',
+    searchPlaceholder: 'ค้นหาแพทเทิร์น...',
+    emptyTitle: 'ยังไม่มีแพทเทิร์นในคลัง',
+    emptySubtitle: 'นำเข้าไฟล์ .json เพื่อเริ่มใช้งาน หรือลองเปิดแพทเทิร์นตัวอย่าง',
+    loadSample: 'โหลดแพทเทิร์นตัวอย่าง',
+    status: {
+      notStarted: 'ยังไม่เริ่ม',
+      inProgress: 'กำลังถัก',
+      completed: 'เสร็จแล้ว'
+    },
+    deleteConfirmTitle: 'ยืนยันการลบแพทเทิร์น',
+    deleteConfirmMessage: 'คุณแน่ใจหรือไม่ว่าต้องการลบแพทเทิร์น "{title}" ข้อมูลความคืบหน้าจะถูกลบด้วย'
+  },
+  materials: {
+    title: 'รายการอุปกรณ์และไหมพรม',
+    yarns: 'ไหมพรมที่ใช้',
+    tools: 'อุปกรณ์ / เข็มถัก',
+    notes: 'บันทึกเพิ่มเติม',
+    gauge: 'ขนาดเกจ (Gauge)',
+    stitchUnitRatio: 'อัตราส่วนหลัก',
+    startPlaying: 'เริ่มถักชิ้นงาน',
+    resumePlaying: 'ถักต่อจากที่ค้างไว้'
+  },
+  player: {
+    repeatCounter: 'ทำซ้ำ',
+    repeatProgress: 'รอบทำซ้ำที่ {current} จาก {total}',
+    stitchesAfter: 'จำนวนหลักสะสม',
+    stitchesCount: '{count} หลัก',
+    note: 'คำแนะนำ',
+    yarnChange: 'เปลี่ยนสีไหมพรมเป็น',
+    partChange: 'เริ่มชิ้นงานใหม่',
+    jumpToStep: 'ไปยังขั้นตอน',
+    stepListTitle: 'ลำดับขั้นตอนทั้งหมด',
+    completeTitle: 'ยินดีด้วย! คุณถักชิ้นงานเสร็จสมบูรณ์แล้ว',
+    completeSubtitle: 'ผลงานชิ้นเอกของคุณสำเร็จเรียบร้อย',
+    assemblyTitle: 'มุมมองประกอบชิ้นงาน (Assembly)',
+    assemblySubtitle: 'แสดงภาพรวมของชิ้นงานทั้งหมดที่ถักเสร็จสิ้น',
+    resetCamera: 'รีเซ็ตมุมกล้อง',
+    toggleAutoFocus: 'โฟกัสหลักใหม่อัตโนมัติ',
+    webglUnavailable: 'เบราว์เซอร์ไม่รองรับ WebGL - คุณยังคงสามารถดูขั้นตอนและถักตามได้ตามปกติ',
+    continuePrompt: 'คุณต้องการถักต่อจาก {step} หรือเริ่มใหม่ตั้งแต่ต้น?'
+  },
+  import: {
+    title: 'นำเข้าแพทเทิร์น (.json)',
+    subtitle: 'เลือกหรือลากไฟล์แพทเทิร์นรูปแบบ JSON มาวางที่นี่',
+    dropzoneText: 'ลากไฟล์ .json มาวางที่นี่ หรือคลิกเพื่อเลือกไฟล์',
+    browseFiles: 'เลือกไฟล์',
+    reviewTitle: 'ตรวจสอบแพทเทิร์นก่อนนำเข้า',
+    patternTitle: 'ชื่อแพทเทิร์น',
+    craftType: 'ประเภทงานถัก',
+    partsCount: 'จำนวนชิ้นส่วน',
+    totalSteps: 'ขั้นตอนทั้งหมด',
+    computedVsExpected: 'จำนวนหลักที่คำนวณได้ เทียบกับที่ระบุในแพทเทิร์น',
+    issuesFound: 'พบข้อผิดพลาดหรือคำเตือน ({count} รายการ)',
+    importSuccess: 'นำเข้าแพทเทิร์นสำเร็จแล้ว',
+    confirmImport: 'บันทึกลงคลังและเริ่มใช้งาน',
+    invalidJsonFormat: 'ไฟล์ JSON ไม่ถูกต้องตามรูปแบบที่กำหนด'
+  },
+  settings: {
+    title: 'การตั้งค่า',
+    language: 'ภาษา (Language)',
+    countRepeats: 'นับรอบการทำซ้ำ (Repeat Counter)',
+    countRepeatsDesc: 'แบ่งย่อยขั้นตอนที่มีการทำซ้ำ (เช่น (sc, inc) x6) ให้นับทีละรอบ',
+    animations: 'แสดงแอนิเมชัน 3D',
+    animationsDesc: 'แสดงแอนิเมชันการถักหลักใหม่แบบทีละหลัก',
+    autoFocus: 'โฟกัสกล้องอัตโนมัติ',
+    autoFocusDesc: 'เลื่อนมุมกล้องเข้าหาหลักที่กำลังถักอยู่โดยอัตโนมัติ'
+  }
+}

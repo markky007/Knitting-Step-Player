@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "sample-ball",
+  "title": "Sample Ball",
+  "craft": "crochet",
+  "materials": {
+    "yarns": [
+      { "id": "y1", "name": "Coral Main", "colorHex": "#E07A5F" }
+    ],
+    "tools": ["3.0 mm hook"]
+  },
+  "parts": [
+    {
+      "id": "body",
+      "name": "Body",
+      "kind": "round",
+      "start": { "kind": "magic_ring" },
+      "stuffed": true,
+      "steps": [
+        {
+          "id": "s1",
+          "label": "Rnd 1",
+          "raw": "6 sc in magic ring (6)",
+          "yarnId": "y1",
+          "expectedCount": 6,
+          "items": [{ "kind": "op", "code": "sc", "n": 6 }]
+        },
+        {
+          "id": "s2",
+          "label": "Rnd 2",
+          "raw": "inc x6 (12)",
+          "expectedCount": 12,
+          "items": [{ "kind": "op", "code": "inc", "n": 6 }]
+        },
+        {
+          "id": "s3",
+          "label": "Rnd 3",
+          "raw": "(sc, inc) x6 (18)",
+          "expectedCount": 18,
+          "items": [
+            {
+              "kind": "group",
+              "repeat": 6,
+              "items": [
+                { "kind": "op", "code": "sc", "n": 1 },
+                { "kind": "op", "code": "inc", "n": 1 }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "label": "Rnd 4",
+          "raw": "sc x18 (18)",
+          "expectedCount": 18,
+          "items": [{ "kind": "op", "code": "sc", "n": 18 }]
+        }
+      ]
+    }
+  ]
+}

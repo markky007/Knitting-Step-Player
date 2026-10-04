@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "id": "sample-hat",
+  "title": "Sample Mini Beanie",
+  "craft": "crochet",
+  "materials": {
+    "yarns": [
+      { "id": "y1", "name": "Brim Yellow", "colorHex": "#F6F202" },
+      { "id": "y2", "name": "Crown Ink", "colorHex": "#0F0E0D" }
+    ],
+    "tools": ["3.5 mm hook", "Tapestry needle"]
+  },
+  "parts": [
+    {
+      "id": "hat",
+      "name": "Beanie",
+      "kind": "round",
+      "start": { "kind": "magic_ring" },
+      "steps": [
+        {
+          "id": "h1",
+          "label": "Rnd 1",
+          "raw": "6 sc in magic ring (6)",
+          "yarnId": "y1",
+          "expectedCount": 6,
+          "items": [{ "kind": "op", "code": "sc", "n": 6 }]
+        },
+        {
+          "id": "h2",
+          "label": "Rnd 2",
+          "raw": "inc x6 (12)",
+          "expectedCount": 12,
+          "items": [{ "kind": "op", "code": "inc", "n": 6 }]
+        },
+        {
+          "id": "h3",
+          "label": "Rnd 3",
+          "raw": "(sc, inc) x6 (18)",
+          "expectedCount": 18,
+          "items": [
+            {
+              "kind": "group",
+              "repeat": 6,
+              "items": [
+                { "kind": "op", "code": "sc", "n": 1 },
+                { "kind": "op", "code": "inc", "n": 1 }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "h4",
+          "label": "Rnd 4",
+          "raw": "sc x18 (18)",
+          "yarnId": "y2",
+          "note": "Switch to Crown Ink",
+          "expectedCount": 18,
+          "items": [{ "kind": "op", "code": "sc", "n": 18 }]
+        },
+        {
+          "id": "h5",
+          "label": "Rnd 5",
+          "raw": "(sc, dec) x6 (12)",
+          "expectedCount": 12,
+          "items": [
+            {
+              "kind": "group",
+              "repeat": 6,
+              "items": [
+                { "kind": "op", "code": "sc", "n": 1 },
+                { "kind": "op", "code": "dec", "n": 1 }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "h6",
+          "label": "Rnd 6",
+          "raw": "dec x6 (6)",
+          "expectedCount": 6,
+          "items": [{ "kind": "op", "code": "dec", "n": 6 }]
+        }
+      ]
+    }
+  ]
+}
